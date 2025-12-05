@@ -1,0 +1,22 @@
+name: CI de Testes Simples
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test_job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout do Código
+      uses: actions/checkout@v4
+    - name: Configurar Node.js e Ambiente
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+    - name: Instalar e Executar Testes
+      run: |
+        npm install
+        npm test
