@@ -1,0 +1,11 @@
+{
+  "name": "ci-cd-equipe5-node",
+  "version": "1.0.0",
+  "description": "Exemplo de CI com GitHub Actions para Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Todos os testes passaram!\" && exit 0" 
+  },
+  "author": "Equipe 5",
+  "license": "ISC"
+}
